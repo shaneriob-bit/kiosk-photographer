@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://oti1qf57b8cx"]
+
+[ext_resource type="Theme" uid="uid://d3v0shwh2amuq" path="res://main_theme.tres" id="1_dmym1"]
+[ext_resource type="Script" uid="uid://d4naop5vke2dc" path="res://_scripts/main.gd" id="2_x6rnu"]
+
+[node name="Main" type="Panel" unique_id=1807654422]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_dmym1")
+script = ExtResource("2_x6rnu")
+
+[node name="ProgramTitle" type="Label" parent="." unique_id=264469391]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -144.5
+offset_top = 16.0
+offset_right = 144.5
+offset_bottom = 50.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 24
+text = "Kiosk Photography Panel"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="OrderLookupButton" type="Button" parent="." unique_id=1327360740]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -58.0
+offset_top = -15.5
+offset_right = 58.0
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Lookup Order"
+
+[node name="OrderNumberText" type="LineEdit" parent="." unique_id=1231159116]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -64.0
+offset_top = -54.0
+offset_right = 64.0
+offset_bottom = -23.0
+grow_horizontal = 2
+grow_vertical = 2
+placeholder_text = "Order Number"
+alignment = 1
+max_length = 4
+
+[connection signal="pressed" from="OrderLookupButton" to="." method="_on_order_lookup_button_pressed"]
+[connection signal="text_submitted" from="OrderNumberText" to="." method="_on_order_number_text_text_submitted"]

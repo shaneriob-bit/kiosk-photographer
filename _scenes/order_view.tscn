@@ -1,0 +1,273 @@
+[gd_scene format=3 uid="uid://bh0sq8odjfwtv"]
+
+[ext_resource type="Script" uid="uid://nvhaura3llfv" path="res://_scripts/order_view.gd" id="1_0gr8k"]
+
+[sub_resource type="Theme" id="Theme_hthnf"]
+
+[node name="OrderView" type="Panel" unique_id=1991894729]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_hthnf")
+script = ExtResource("1_0gr8k")
+
+[node name="UnpaidShootConfirmation" type="ConfirmationDialog" parent="." unique_id=1216782327]
+oversampling_override = 1.0
+title = "Order not Paid"
+initial_position = 2
+size = Vector2i(688, 106)
+dialog_text = "This order is not marked as paid. 
+Are you sure you want to go to the shoot photo view?"
+
+[node name="ProgramTitle" type="Label" parent="." unique_id=352120737]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -144.5
+offset_top = 16.0
+offset_right = 144.5
+offset_bottom = 50.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 24
+text = "Order View"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackButton" type="Button" parent="." unique_id=860797347]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 172.0
+offset_bottom = 47.0
+text = "Back to Order Lookup"
+
+[node name="InformationContainer" type="VBoxContainer" parent="." unique_id=234005090]
+layout_mode = 0
+offset_left = 16.0
+offset_top = 64.0
+offset_right = 56.0
+offset_bottom = 104.0
+theme_override_constants/separation = 12
+
+[node name="Label" type="Label" parent="InformationContainer" unique_id=473730044]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "General Information:"
+vertical_alignment = 1
+
+[node name="OrderNumber" type="RichTextLabel" parent="InformationContainer" unique_id=252286835]
+layout_mode = 2
+focus_mode = 2
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "Order Number: 1657"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="DateTime" type="RichTextLabel" parent="InformationContainer" unique_id=318886102]
+layout_mode = 2
+focus_mode = 2
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "Date/Time: 10/30/2026, 11:57 PM"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="CustomerName" type="RichTextLabel" parent="InformationContainer" unique_id=425594775]
+layout_mode = 2
+focus_mode = 2
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "Customer Name: Shane Bernstein"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="Price" type="RichTextLabel" parent="InformationContainer" unique_id=135528629]
+layout_mode = 2
+focus_mode = 2
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "Price: $19.99"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="PaymentMethod" type="RichTextLabel" parent="InformationContainer" unique_id=1275192874]
+layout_mode = 2
+focus_mode = 2
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "Payment Method: Cash"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="PrintCount" type="RichTextLabel" parent="InformationContainer" unique_id=1234813619]
+layout_mode = 2
+focus_mode = 2
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "Prints Ordered: 6"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="EmailCount" type="RichTextLabel" parent="InformationContainer" unique_id=451935723]
+layout_mode = 2
+focus_mode = 2
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "Emails Ordered: 6"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="StampContainer" type="VBoxContainer" parent="." unique_id=877538537]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -279.0
+offset_top = 64.0
+offset_right = -16.0
+offset_bottom = 283.0
+grow_horizontal = 0
+theme_override_constants/separation = 12
+
+[node name="Label" type="Label" parent="StampContainer" unique_id=184105413]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Stamps"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="IsPaid" type="HBoxContainer" parent="StampContainer" unique_id=1403106136]
+layout_mode = 2
+alignment = 2
+
+[node name="Label" type="Label" parent="StampContainer/IsPaid" unique_id=1595441835]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Is Paid"
+
+[node name="CheckBox" type="CheckBox" parent="StampContainer/IsPaid" unique_id=1349582354]
+layout_mode = 2
+
+[node name="PicturesPrinted" type="HBoxContainer" parent="StampContainer" unique_id=602185364]
+layout_mode = 2
+alignment = 2
+
+[node name="Label" type="Label" parent="StampContainer/PicturesPrinted" unique_id=388716110]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Pictures Printed"
+
+[node name="CheckBox" type="CheckBox" parent="StampContainer/PicturesPrinted" unique_id=1863490331]
+layout_mode = 2
+
+[node name="PicturesPickedUp" type="HBoxContainer" parent="StampContainer" unique_id=1752093607]
+layout_mode = 2
+alignment = 2
+
+[node name="Label" type="Label" parent="StampContainer/PicturesPickedUp" unique_id=1673610308]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Pictures Picked Up"
+
+[node name="CheckBox" type="CheckBox" parent="StampContainer/PicturesPickedUp" unique_id=456957699]
+layout_mode = 2
+
+[node name="EmailsSent" type="HBoxContainer" parent="StampContainer" unique_id=688082132]
+layout_mode = 2
+alignment = 2
+
+[node name="Label" type="Label" parent="StampContainer/EmailsSent" unique_id=2058075240]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "Emails Sent"
+
+[node name="CheckBox" type="CheckBox" parent="StampContainer/EmailsSent" unique_id=338749447]
+layout_mode = 2
+
+[node name="PhotosTaken" type="Label" parent="StampContainer" unique_id=747841772]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_font_sizes/font_size = 24
+text = "Pictures Taken (6 / 6)"
+horizontal_alignment = 2
+
+[node name="PhotosEdited" type="Label" parent="StampContainer" unique_id=1047901582]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_font_sizes/font_size = 24
+text = "Pictures Edited (0 / 6)"
+horizontal_alignment = 2
+
+[node name="OptionsContainer" type="VBoxContainer" parent="." unique_id=317773474]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -192.0
+offset_top = -203.0
+offset_right = 192.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 32
+alignment = 1
+
+[node name="ShootPhotos" type="Button" parent="OptionsContainer" unique_id=1639580316]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Shoot Photos"
+
+[node name="OpenPhotosDisk" type="Button" parent="OptionsContainer" unique_id=2122881669]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Show Photos in Explorer"
+
+[node name="DeleteOrder" type="Button" parent="OptionsContainer" unique_id=1950755875]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Delete Order"
+
+[node name="ImportantPhotographerInfo" type="VBoxContainer" parent="." unique_id=177217912]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[connection signal="confirmed" from="UnpaidShootConfirmation" to="." method="_on_unpaid_shoot_confirmation_confirmed"]
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="OptionsContainer/ShootPhotos" to="." method="_on_shoot_photos_pressed"]
