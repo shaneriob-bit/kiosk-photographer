@@ -11,7 +11,7 @@ func _unhandled_input(event):
 	if event is InputEventKey:
 		if event.keycode == KEY_F1 and $UneditedRect/CameraStatus.visible == true:
 			$UneditedRect/FileName.text = "unedited-1-bkg9.jpg"
-			var texture = load("res://_camera_roll/ariLandscape.png")
+			var texture = load("res://_camera_roll/unedited_green_screen_smile.png")
 			$UneditedRect.texture = texture
 			$UneditedRect/ShootWithCam.show()
 			$UneditedRect/CameraStatus.hide()

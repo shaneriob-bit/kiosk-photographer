@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dg8cj8pymmq2g"
-path="res://.godot/imported/ariLandscape.png-1d55dd4dec7cc73d3978884c33140dc6.ctex"
+uid="uid://bgtce767uprhc"
+path="res://.godot/imported/unedited_green_screen_smile.png-780bb1fb27a5dcb0c5b47670f768049e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://_camera_roll/ariLandscape.png"
-dest_files=["res://.godot/imported/ariLandscape.png-1d55dd4dec7cc73d3978884c33140dc6.ctex"]
+source_file="res://_camera_roll/unedited_green_screen_smile.png"
+dest_files=["res://.godot/imported/unedited_green_screen_smile.png-780bb1fb27a5dcb0c5b47670f768049e.ctex"]
 
 [params]
 

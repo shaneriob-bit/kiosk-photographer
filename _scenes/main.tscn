@@ -27,21 +27,6 @@ text = "Kiosk Photography Panel"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="OrderLookupButton" type="Button" parent="." unique_id=1327360740]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -58.0
-offset_top = -15.5
-offset_right = 58.0
-offset_bottom = 15.5
-grow_horizontal = 2
-grow_vertical = 2
-text = "Lookup Order"
-
 [node name="OrderNumberText" type="LineEdit" parent="." unique_id=1231159116]
 layout_mode = 1
 anchors_preset = 8
@@ -59,5 +44,35 @@ placeholder_text = "Order Number"
 alignment = 1
 max_length = 4
 
-[connection signal="pressed" from="OrderLookupButton" to="." method="_on_order_lookup_button_pressed"]
+[node name="OrderLookupButton" type="Button" parent="." unique_id=1327360740]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -56.0
+offset_top = -12.0
+offset_right = 60.0
+offset_bottom = 19.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Lookup Order"
+
+[node name="KioskSettings" type="Button" parent="." unique_id=112710510]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -56.0
+offset_top = 28.0
+offset_right = 60.0
+offset_bottom = 59.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Kiosk Settings"
+
 [connection signal="text_submitted" from="OrderNumberText" to="." method="_on_order_number_text_text_submitted"]
+[connection signal="pressed" from="OrderLookupButton" to="." method="_on_order_lookup_button_pressed"]
