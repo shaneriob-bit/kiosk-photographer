@@ -1,0 +1,523 @@
+[gd_scene format=3 uid="uid://ujo8ws5nlxvp"]
+
+[ext_resource type="Theme" uid="uid://d3v0shwh2amuq" path="res://main_theme.tres" id="1_y8ty0"]
+[ext_resource type="Script" uid="uid://3lstvm85bspx" path="res://_scripts/photo_search_view.gd" id="2_y8ty0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v4k5x"]
+bg_color = Color(0.072842635, 0.072842635, 0.072842635, 1)
+
+[node name="PhotoSearchView" type="Panel" unique_id=1807654422]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_y8ty0")
+script = ExtResource("2_y8ty0")
+
+[node name="ProgramTitle" type="Label" parent="." unique_id=1029908483]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -144.5
+offset_top = 16.0
+offset_right = 144.5
+offset_bottom = 50.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 24
+text = "Order List"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=1330669437]
+custom_minimum_size = Vector2(260, 128)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = -44.0
+offset_right = 132.0
+offset_bottom = 212.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer" unique_id=2031599127]
+layout_mode = 2
+
+[node name="Panel" type="Panel" parent="ScrollContainer/VBoxContainer" unique_id=1483638415]
+custom_minimum_size = Vector2(256, 64)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_v4k5x")
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Panel" unique_id=94701645]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 143.0
+offset_bottom = 29.0
+theme_override_font_sizes/font_size = 12
+text = "Name: John Doe"
+
+[node name="OrderNumber" type="Label" parent="ScrollContainer/VBoxContainer/Panel" unique_id=1106959883]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 6.0
+offset_top = -29.0
+offset_right = 143.0
+offset_bottom = -6.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 12
+text = "Order Number: 1657"
+
+[node name="Time" type="Label" parent="ScrollContainer/VBoxContainer/Panel" unique_id=2128792794]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 113.0
+offset_top = -56.0
+offset_right = 250.0
+offset_bottom = -33.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 12
+text = "11/3/2026 - 6:53 PM"
+horizontal_alignment = 2
+
+[node name="Time2" type="Label" parent="ScrollContainer/VBoxContainer/Panel" unique_id=1948330249]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 113.0
+offset_top = -29.0
+offset_right = 250.0
+offset_bottom = -6.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 12
+text = "Incomplete"
+horizontal_alignment = 2
+
+[node name="Panel2" type="Panel" parent="ScrollContainer/VBoxContainer" unique_id=1641087818]
+custom_minimum_size = Vector2(256, 64)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_v4k5x")
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Panel2" unique_id=241217341]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 143.0
+offset_bottom = 29.0
+theme_override_font_sizes/font_size = 12
+text = "Name: John Doe"
+
+[node name="OrderNumber" type="Label" parent="ScrollContainer/VBoxContainer/Panel2" unique_id=34263232]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 6.0
+offset_top = -29.0
+offset_right = 143.0
+offset_bottom = -6.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 12
+text = "Order Number: 1657"
+
+[node name="Time" type="Label" parent="ScrollContainer/VBoxContainer/Panel2" unique_id=123469823]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 113.0
+offset_top = -56.0
+offset_right = 250.0
+offset_bottom = -33.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 12
+text = "11/3/2026 - 6:53 PM"
+horizontal_alignment = 2
+
+[node name="Time2" type="Label" parent="ScrollContainer/VBoxContainer/Panel2" unique_id=1723303770]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 113.0
+offset_top = -29.0
+offset_right = 250.0
+offset_bottom = -6.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 12
+text = "Incomplete"
+horizontal_alignment = 2
+
+[node name="Panel3" type="Panel" parent="ScrollContainer/VBoxContainer" unique_id=1999351160]
+custom_minimum_size = Vector2(256, 64)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_v4k5x")
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Panel3" unique_id=748048599]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 143.0
+offset_bottom = 29.0
+theme_override_font_sizes/font_size = 12
+text = "Name: John Doe"
+
+[node name="OrderNumber" type="Label" parent="ScrollContainer/VBoxContainer/Panel3" unique_id=489986427]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 6.0
+offset_top = -29.0
+offset_right = 143.0
+offset_bottom = -6.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 12
+text = "Order Number: 1657"
+
+[node name="Time" type="Label" parent="ScrollContainer/VBoxContainer/Panel3" unique_id=249618553]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 113.0
+offset_top = -56.0
+offset_right = 250.0
+offset_bottom = -33.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 12
+text = "11/3/2026 - 6:53 PM"
+horizontal_alignment = 2
+
+[node name="Time2" type="Label" parent="ScrollContainer/VBoxContainer/Panel3" unique_id=1989103836]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 113.0
+offset_top = -29.0
+offset_right = 250.0
+offset_bottom = -6.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 12
+text = "Incomplete"
+horizontal_alignment = 2
+
+[node name="Panel4" type="Panel" parent="ScrollContainer/VBoxContainer" unique_id=488618756]
+custom_minimum_size = Vector2(256, 64)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_v4k5x")
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Panel4" unique_id=1291396357]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 143.0
+offset_bottom = 29.0
+theme_override_font_sizes/font_size = 12
+text = "Name: John Doe"
+
+[node name="OrderNumber" type="Label" parent="ScrollContainer/VBoxContainer/Panel4" unique_id=400356046]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 6.0
+offset_top = -29.0
+offset_right = 143.0
+offset_bottom = -6.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 12
+text = "Order Number: 1657"
+
+[node name="Time" type="Label" parent="ScrollContainer/VBoxContainer/Panel4" unique_id=18927072]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 113.0
+offset_top = -56.0
+offset_right = 250.0
+offset_bottom = -33.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 12
+text = "11/3/2026 - 6:53 PM"
+horizontal_alignment = 2
+
+[node name="Time2" type="Label" parent="ScrollContainer/VBoxContainer/Panel4" unique_id=376615716]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 113.0
+offset_top = -29.0
+offset_right = 250.0
+offset_bottom = -6.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 12
+text = "Incomplete"
+horizontal_alignment = 2
+
+[node name="Panel5" type="Panel" parent="ScrollContainer/VBoxContainer" unique_id=1565778026]
+custom_minimum_size = Vector2(256, 64)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_v4k5x")
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Panel5" unique_id=35092826]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 143.0
+offset_bottom = 29.0
+theme_override_font_sizes/font_size = 12
+text = "Name: John Doe"
+
+[node name="OrderNumber" type="Label" parent="ScrollContainer/VBoxContainer/Panel5" unique_id=996851658]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 6.0
+offset_top = -29.0
+offset_right = 143.0
+offset_bottom = -6.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 12
+text = "Order Number: 1657"
+
+[node name="Time" type="Label" parent="ScrollContainer/VBoxContainer/Panel5" unique_id=1063805190]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 113.0
+offset_top = -56.0
+offset_right = 250.0
+offset_bottom = -33.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 12
+text = "11/3/2026 - 6:53 PM"
+horizontal_alignment = 2
+
+[node name="Time2" type="Label" parent="ScrollContainer/VBoxContainer/Panel5" unique_id=920213271]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 113.0
+offset_top = -29.0
+offset_right = 250.0
+offset_bottom = -6.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 12
+text = "Incomplete"
+horizontal_alignment = 2
+
+[node name="Panel6" type="Panel" parent="ScrollContainer/VBoxContainer" unique_id=1317746504]
+custom_minimum_size = Vector2(256, 64)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_v4k5x")
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Panel6" unique_id=599488005]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 143.0
+offset_bottom = 29.0
+theme_override_font_sizes/font_size = 12
+text = "Name: John Doe"
+
+[node name="OrderNumber" type="Label" parent="ScrollContainer/VBoxContainer/Panel6" unique_id=1427604934]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 6.0
+offset_top = -29.0
+offset_right = 143.0
+offset_bottom = -6.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 12
+text = "Order Number: 1657"
+
+[node name="Time" type="Label" parent="ScrollContainer/VBoxContainer/Panel6" unique_id=1614925]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 113.0
+offset_top = -56.0
+offset_right = 250.0
+offset_bottom = -33.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 12
+text = "11/3/2026 - 6:53 PM"
+horizontal_alignment = 2
+
+[node name="Time2" type="Label" parent="ScrollContainer/VBoxContainer/Panel6" unique_id=123780168]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 113.0
+offset_top = -29.0
+offset_right = 250.0
+offset_bottom = -6.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 12
+text = "Incomplete"
+horizontal_alignment = 2
+
+[node name="Panel7" type="Panel" parent="ScrollContainer/VBoxContainer" unique_id=1612455320]
+custom_minimum_size = Vector2(256, 64)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_v4k5x")
+
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer/Panel7" unique_id=478347284]
+layout_mode = 0
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 143.0
+offset_bottom = 29.0
+theme_override_font_sizes/font_size = 12
+text = "Name: John Doe"
+
+[node name="OrderNumber" type="Label" parent="ScrollContainer/VBoxContainer/Panel7" unique_id=1933398336]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 6.0
+offset_top = -29.0
+offset_right = 143.0
+offset_bottom = -6.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 12
+text = "Order Number: 1657"
+
+[node name="Time" type="Label" parent="ScrollContainer/VBoxContainer/Panel7" unique_id=253238747]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 113.0
+offset_top = -56.0
+offset_right = 250.0
+offset_bottom = -33.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 12
+text = "11/3/2026 - 6:53 PM"
+horizontal_alignment = 2
+
+[node name="Time2" type="Label" parent="ScrollContainer/VBoxContainer/Panel7" unique_id=1886890240]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 113.0
+offset_top = -29.0
+offset_right = 250.0
+offset_bottom = -6.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 12
+text = "Incomplete"
+horizontal_alignment = 2
+
+[node name="LineEdit" type="LineEdit" parent="." unique_id=5947161]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = -132.0
+offset_right = 128.0
+offset_bottom = -101.0
+grow_horizontal = 2
+grow_vertical = 2
+placeholder_text = "Enter name to search"
+
+[node name="Go Back" type="Button" parent="." unique_id=38628286]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = -48.0
+offset_right = 87.0
+offset_bottom = -17.0
+grow_vertical = 0
+text = "Go Back"
+
+[node name="Label" type="Label" parent="." unique_id=592828102]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = -68.0
+offset_right = -69.0
+offset_bottom = -45.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Name ↑"
+
+[node name="Label3" type="Label" parent="." unique_id=1684140623]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -68.0
+offset_right = 25.0
+offset_bottom = -45.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Number"
+
+[node name="Label4" type="Label" parent="." unique_id=527389273]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 40.0
+offset_top = -68.0
+offset_right = 125.0
+offset_bottom = -45.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Completed"
+
+[node name="Label2" type="Label" parent="." unique_id=110818815]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -32.0
+offset_top = -92.0
+offset_right = 27.0
+offset_bottom = -69.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Sort By:"
+
+[connection signal="pressed" from="Go Back" to="." method="_on_go_back_pressed"]

@@ -135,7 +135,31 @@ layout_mode = 2
 focus_mode = 2
 theme_override_font_sizes/normal_font_size = 20
 bbcode_enabled = true
-text = "Emails Ordered: 6"
+text = "Emails Ordered: 2"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="Email1" type="RichTextLabel" parent="InformationContainer" unique_id=600147500]
+layout_mode = 2
+focus_mode = 2
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "rob@hotmail.com"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
+vertical_alignment = 1
+selection_enabled = true
+
+[node name="Email2" type="RichTextLabel" parent="InformationContainer" unique_id=1392532076]
+layout_mode = 2
+focus_mode = 2
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "bob@hotmail.com"
 fit_content = true
 scroll_active = false
 autowrap_mode = 0

@@ -1,0 +1,212 @@
+[gd_scene format=3 uid="uid://deurxyshwvyr6"]
+
+[ext_resource type="Theme" uid="uid://d3v0shwh2amuq" path="res://main_theme.tres" id="1_ck1kb"]
+[ext_resource type="Script" uid="uid://cqhikxpddxfg4" path="res://_scripts/kiosk_config.gd" id="2_ck1kb"]
+
+[node name="KioskConfig" type="Panel" unique_id=1807654422]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_ck1kb")
+script = ExtResource("2_ck1kb")
+
+[node name="ProgramTitle" type="Label" parent="." unique_id=1964363001]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -144.5
+offset_top = 16.0
+offset_right = 144.5
+offset_bottom = 50.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 24
+text = "Kiosk Config"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ProgramTitle2" type="Label" parent="." unique_id=1334671367]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -144.0
+offset_top = 72.0
+offset_right = 145.0
+offset_bottom = 106.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 16
+text = "This machine's local IP: 192.168.0.89"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=2017124823]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="EventName" type="HBoxContainer" parent="VBoxContainer" unique_id=1925780203]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Label" type="Label" parent="VBoxContainer/EventName" unique_id=224895029]
+custom_minimum_size = Vector2(128, 0)
+layout_mode = 2
+text = "Event Name"
+
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer/EventName" unique_id=1728672039]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "Dowtowngetdown"
+placeholder_text = "Enter event name"
+
+[node name="Theme" type="HBoxContainer" parent="VBoxContainer" unique_id=1369006956]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Label" type="Label" parent="VBoxContainer/Theme" unique_id=1337392329]
+custom_minimum_size = Vector2(128, 0)
+layout_mode = 2
+text = "Theme"
+
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer/Theme" unique_id=67247653]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "FSU"
+placeholder_text = "Enter event name"
+
+[node name="Theme2" type="HBoxContainer" parent="VBoxContainer" unique_id=1238798811]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Label" type="Label" parent="VBoxContainer/Theme2" unique_id=1160770111]
+custom_minimum_size = Vector2(128, 0)
+layout_mode = 2
+text = "Base price"
+
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer/Theme2" unique_id=143864144]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "9.99"
+placeholder_text = "Enter event name"
+
+[node name="FreeEvent" type="HBoxContainer" parent="VBoxContainer" unique_id=2002577279]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Label" type="Label" parent="VBoxContainer/FreeEvent" unique_id=413025811]
+custom_minimum_size = Vector2(128, 0)
+layout_mode = 2
+text = "Free Event"
+
+[node name="CheckBox" type="CheckBox" parent="VBoxContainer/FreeEvent" unique_id=1482436160]
+layout_mode = 2
+
+[node name="FreeEvent2" type="HBoxContainer" parent="VBoxContainer" unique_id=599068561]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Label" type="Label" parent="VBoxContainer/FreeEvent2" unique_id=251357242]
+custom_minimum_size = Vector2(128, 0)
+layout_mode = 2
+text = "Cash Enabled"
+
+[node name="CheckBox" type="CheckBox" parent="VBoxContainer/FreeEvent2" unique_id=720005638]
+layout_mode = 2
+
+[node name="FreeEvent3" type="HBoxContainer" parent="VBoxContainer" unique_id=592626530]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Label" type="Label" parent="VBoxContainer/FreeEvent3" unique_id=1819344041]
+custom_minimum_size = Vector2(128, 0)
+layout_mode = 2
+text = "Credit Enabled"
+
+[node name="CheckBox" type="CheckBox" parent="VBoxContainer/FreeEvent3" unique_id=386397268]
+layout_mode = 2
+
+[node name="FreeEvent4" type="HBoxContainer" parent="VBoxContainer" unique_id=1912001249]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Label" type="Label" parent="VBoxContainer/FreeEvent4" unique_id=1363395962]
+custom_minimum_size = Vector2(128, 0)
+layout_mode = 2
+text = "Debit Enabled"
+
+[node name="CheckBox" type="CheckBox" parent="VBoxContainer/FreeEvent4" unique_id=1958872428]
+layout_mode = 2
+
+[node name="FreeEvent5" type="HBoxContainer" parent="VBoxContainer" unique_id=265553577]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Label" type="Label" parent="VBoxContainer/FreeEvent5" unique_id=104867503]
+custom_minimum_size = Vector2(128, 0)
+layout_mode = 2
+text = "Check Enabled"
+
+[node name="CheckBox" type="CheckBox" parent="VBoxContainer/FreeEvent5" unique_id=1667919616]
+layout_mode = 2
+
+[node name="FreeEvent6" type="HBoxContainer" parent="VBoxContainer" unique_id=346699736]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Label" type="Label" parent="VBoxContainer/FreeEvent6" unique_id=447092745]
+custom_minimum_size = Vector2(128, 0)
+layout_mode = 2
+text = "Email Delivery"
+
+[node name="CheckBox" type="CheckBox" parent="VBoxContainer/FreeEvent6" unique_id=581965237]
+layout_mode = 2
+
+[node name="FreeEvent7" type="HBoxContainer" parent="VBoxContainer" unique_id=924055086]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Label" type="Label" parent="VBoxContainer/FreeEvent7" unique_id=666266228]
+custom_minimum_size = Vector2(128, 0)
+layout_mode = 2
+text = "Print Copies"
+
+[node name="CheckBox" type="CheckBox" parent="VBoxContainer/FreeEvent7" unique_id=1131851784]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=877853659]
+layout_mode = 2
+text = "Open Backgrounds Folder"
+
+[node name="Button2" type="Button" parent="VBoxContainer" unique_id=2030246771]
+layout_mode = 2
+text = "Open Previews Folder"
+
+[node name="Button3" type="Button" parent="VBoxContainer" unique_id=1129378571]
+layout_mode = 2
+text = "Change Camera Roll Directory"
+
+[node name="Home" type="Button" parent="." unique_id=504566681]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_top = -48.0
+offset_right = 132.0
+offset_bottom = -17.0
+grow_vertical = 0
+text = "Go Back"
+
+[connection signal="pressed" from="Home" to="." method="_on_home_pressed"]
