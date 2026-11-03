@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dpn43e33yetj2"]
 
 [ext_resource type="Script" uid="uid://dy6yo8jxwwd2c" path="res://_scripts/photo_view.gd" id="1_b3vok"]
-[ext_resource type="Texture2D" uid="uid://c185ngquh3jrt" path="res://random-wallpapers-green-lime-background-wallpaper-32549.jpg" id="1_st7m2"]
+[ext_resource type="Texture2D" uid="uid://c185ngquh3jrt" path="res://_backgrounds/random-wallpapers-green-lime-background-wallpaper-32549.jpg" id="1_st7m2"]
 [ext_resource type="Texture2D" uid="uid://ch71s5jik54jb" path="res://noImageFound.png" id="3_rdhhf"]
 
 [sub_resource type="Theme" id="Theme_hthnf"]
@@ -283,5 +283,14 @@ offset_right = 172.0
 offset_bottom = 47.0
 text = "Back to Order 1657"
 
+[node name="RetakePhotoConfirmation" type="ConfirmationDialog" parent="." unique_id=1473835803]
+oversampling_override = 1.0
+title = "Retake Image"
+initial_position = 2
+size = Vector2i(688, 106)
+dialog_text = "This will replace the image you have taken.
+Are you sure you want to shoot the photo?"
+
+[connection signal="item_selected" from="InfoContainer/PhotoSelectionContainer/OptionButton" to="." method="_on_option_button_item_selected"]
 [connection signal="pressed" from="UneditedRect/ShootWithCam" to="." method="_on_shoot_with_cam_pressed"]
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]

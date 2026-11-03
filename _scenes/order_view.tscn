@@ -268,6 +268,21 @@ offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="TextEdit" type="TextEdit" parent="." unique_id=544658059]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -279.0
+offset_top = -160.0
+offset_right = -23.0
+offset_bottom = -32.0
+grow_horizontal = 0
+grow_vertical = 0
+placeholder_text = "Special Notes"
+
 [connection signal="confirmed" from="UnpaidShootConfirmation" to="." method="_on_unpaid_shoot_confirmation_confirmed"]
 [connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
 [connection signal="pressed" from="OptionsContainer/ShootPhotos" to="." method="_on_shoot_photos_pressed"]
