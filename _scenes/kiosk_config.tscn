@@ -49,10 +49,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -20.0
-offset_right = 20.0
-offset_bottom = 20.0
+offset_left = -444.0
+offset_top = -201.0
+offset_right = -108.0
+offset_bottom = 201.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -196,6 +196,215 @@ text = "Open Previews Folder"
 [node name="Button3" type="Button" parent="VBoxContainer" unique_id=1129378571]
 layout_mode = 2
 text = "Change Camera Roll Directory"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="." unique_id=1551368472]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 145.0
+offset_top = -201.0
+offset_right = 481.0
+offset_bottom = 201.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="EventName" type="HBoxContainer" parent="VBoxContainer2" unique_id=1072356632]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Label" type="Label" parent="VBoxContainer2/EventName" unique_id=412084423]
+custom_minimum_size = Vector2(128, 0)
+layout_mode = 2
+text = "P1P"
+
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer2/EventName" unique_id=1104494699]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "9.99"
+placeholder_text = "Enter Price"
+
+[node name="EventName2" type="HBoxContainer" parent="VBoxContainer2" unique_id=1205257888]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Label" type="Label" parent="VBoxContainer2/EventName2" unique_id=1613975078]
+custom_minimum_size = Vector2(128, 0)
+layout_mode = 2
+text = "P2P"
+
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer2/EventName2" unique_id=1026256892]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "9.99"
+placeholder_text = "Enter Price"
+
+[node name="EventName3" type="HBoxContainer" parent="VBoxContainer2" unique_id=347561020]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Label" type="Label" parent="VBoxContainer2/EventName3" unique_id=1337009756]
+custom_minimum_size = Vector2(128, 0)
+layout_mode = 2
+text = "P3P"
+
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer2/EventName3" unique_id=416315267]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "9.99"
+placeholder_text = "Enter Price"
+
+[node name="EventName4" type="HBoxContainer" parent="VBoxContainer2" unique_id=743724254]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Label" type="Label" parent="VBoxContainer2/EventName4" unique_id=837772476]
+custom_minimum_size = Vector2(128, 0)
+layout_mode = 2
+text = "P4P"
+
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer2/EventName4" unique_id=1876409487]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "9.99"
+placeholder_text = "Enter Price"
+
+[node name="EventName5" type="HBoxContainer" parent="VBoxContainer2" unique_id=696852912]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Label" type="Label" parent="VBoxContainer2/EventName5" unique_id=1194374407]
+custom_minimum_size = Vector2(128, 0)
+layout_mode = 2
+text = "P5P"
+
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer2/EventName5" unique_id=185683450]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "9.99"
+placeholder_text = "Enter Price"
+
+[node name="EventName6" type="HBoxContainer" parent="VBoxContainer2" unique_id=560655235]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Label" type="Label" parent="VBoxContainer2/EventName6" unique_id=907789482]
+custom_minimum_size = Vector2(128, 0)
+layout_mode = 2
+text = "P6P"
+
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer2/EventName6" unique_id=118940766]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "9.99"
+placeholder_text = "Enter Price"
+
+[node name="EventName7" type="HBoxContainer" parent="VBoxContainer2" unique_id=900484963]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Label" type="Label" parent="VBoxContainer2/EventName7" unique_id=531363961]
+custom_minimum_size = Vector2(128, 0)
+layout_mode = 2
+text = "P7P"
+
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer2/EventName7" unique_id=733073430]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "9.99"
+placeholder_text = "Enter Price"
+
+[node name="EventName8" type="HBoxContainer" parent="VBoxContainer2" unique_id=1131195272]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Label" type="Label" parent="VBoxContainer2/EventName8" unique_id=2036146414]
+custom_minimum_size = Vector2(128, 0)
+layout_mode = 2
+text = "P8P"
+
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer2/EventName8" unique_id=628957465]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "9.99"
+placeholder_text = "Enter Price"
+
+[node name="EventName9" type="HBoxContainer" parent="VBoxContainer2" unique_id=1258459486]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Label" type="Label" parent="VBoxContainer2/EventName9" unique_id=1354829486]
+custom_minimum_size = Vector2(128, 0)
+layout_mode = 2
+text = "E1P"
+
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer2/EventName9" unique_id=1550991774]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "9.99"
+placeholder_text = "Enter Price"
+
+[node name="EventName10" type="HBoxContainer" parent="VBoxContainer2" unique_id=802662866]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Label" type="Label" parent="VBoxContainer2/EventName10" unique_id=1387768838]
+custom_minimum_size = Vector2(128, 0)
+layout_mode = 2
+text = "E2P"
+
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer2/EventName10" unique_id=2097429219]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "9.99"
+placeholder_text = "Enter Price"
+
+[node name="EventName11" type="HBoxContainer" parent="VBoxContainer2" unique_id=201260950]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Label" type="Label" parent="VBoxContainer2/EventName11" unique_id=1566925078]
+custom_minimum_size = Vector2(128, 0)
+layout_mode = 2
+text = "E3P"
+
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer2/EventName11" unique_id=1492526277]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "9.99"
+placeholder_text = "Enter Price"
+
+[node name="EventName12" type="HBoxContainer" parent="VBoxContainer2" unique_id=374464493]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Label" type="Label" parent="VBoxContainer2/EventName12" unique_id=1341976171]
+custom_minimum_size = Vector2(128, 0)
+layout_mode = 2
+text = "E4P"
+
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer2/EventName12" unique_id=1175873508]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "9.99"
+placeholder_text = "Enter Price"
+
+[node name="EventName13" type="HBoxContainer" parent="VBoxContainer2" unique_id=836336980]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Label" type="Label" parent="VBoxContainer2/EventName13" unique_id=1132737754]
+custom_minimum_size = Vector2(128, 0)
+layout_mode = 2
+text = "E5P"
+
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer2/EventName13" unique_id=346261899]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "9.99"
+placeholder_text = "Enter Price"
 
 [node name="Home" type="Button" parent="." unique_id=504566681]
 layout_mode = 1

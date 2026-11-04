@@ -89,3 +89,4 @@ text = "Kiosk Settings"
 [connection signal="text_submitted" from="OrderNumberText" to="." method="_on_order_number_text_text_submitted"]
 [connection signal="pressed" from="OrderLookupButton" to="." method="_on_order_lookup_button_pressed"]
 [connection signal="pressed" from="NameSearchButton" to="." method="_on_name_search_button_pressed"]
+[connection signal="pressed" from="KioskSettings" to="." method="_on_kiosk_settings_pressed"]
